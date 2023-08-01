@@ -24,6 +24,17 @@ config MTK_ENG_BUILD
 	  Please set N for user mode to avoid performance impact.
 	  If unsure, say N here.
 
+config MTK_DTBO_FEATURE
+	bool "Support Device Tree Overlay"
+	default y
+	select BUILD_ARM_DTB_OVERLAY_IMAGE if !ARM64
+	select BUILD_ARM64_DTB_OVERLAY_IMAGE if ARM64
+	help
+	 This allows a central DTB and overlays it dynamically.
+	 An overlay can add nodes to the tree and make changes to properties
+	 in the existing tree.
+	 If you are not sure about this, set y
+
 config MTK_LM_MODE
 	bool "MTK Large Memory mode"
 	select ARCH_PHYS_ADDR_T_64BIT
