@@ -21,7 +21,7 @@ jobs:
     - name: vendor
       uses: actions/checkout@v2
       with:
-        repository: realme_C25_C25s_narzo-50A-AndroidT-vendor-source
+        repository: realme-kernel-opensource/realme_C25_C25s_narzo-50A-AndroidT-vendor-source
 
     - name: mulai membuil krenel anda🗿
       uses: lemniskett/android-kernel-actions@master
