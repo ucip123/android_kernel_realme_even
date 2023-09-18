@@ -1,6 +1,7 @@
-name: Build on push master
+name: Androweed kernel
 
 on:
+  workflow_dispatch:
   push:
     branches: [ OSS-RUI2-NO-KSU ]
 
