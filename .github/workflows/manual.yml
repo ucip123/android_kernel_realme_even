@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout kernel source
       uses: actions/checkout@v2
+      with: 
+        repository: ucip123/android_kernel_realme_even
 
     - name: Checkout zipper
       uses: actions/checkout@v2
