@@ -35,7 +35,7 @@ jobs:
         NAME: KernelAbalAbal
       with:
         arch: arm64
-        compiler:  clang/11
+        compiler:  clang/11/binutils
         defconfig: k68v1_64_k419_defconfig
         image: Image.gz-dtb
 
