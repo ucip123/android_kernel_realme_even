@@ -57,7 +57,8 @@ typedef __kernel_size_t		size_t;
 
 #ifndef _SSIZE_T
 #define _SSIZE_T
-typedef __kernel_ssize_t	ssize_t;
+#undef ssize_t
+typedef __kernel_ssize_t        ssize_t;
 #endif
 
 #ifndef _PTRDIFF_T
